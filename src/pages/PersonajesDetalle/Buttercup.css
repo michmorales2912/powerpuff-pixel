@@ -1,0 +1,82 @@
+.buttercup-section {
+  min-height: 100vh;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #e0ffe4; /* Verde muy claro */
+}
+
+.buttercup-titulo {
+  font-family: 'Press Start 2P', cursive;
+  color: #7aff7a; /* Verde neón suave */
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: pulse 2s infinite;
+}
+
+.buttercup-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.buttercup-imagen-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 31, 10, 0.8); /* Verde oscuro */
+  border: 2px solid #7aff7a;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 20px #7aff7a;
+}
+
+.buttercup-imagen {
+  width: 220px;
+  height: 220px;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 0 15px #7aff7a);
+}
+
+.buttercup-info {
+  background-color: rgba(5, 31, 10, 0.8);
+  border: 2px solid #7aff7a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 600px;
+  box-shadow: 0 0 20px #7aff7a;
+}
+
+.buttercup-info h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #adffb1;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.buttercup-info p,
+.buttercup-info ul {
+  font-size: 0.9rem;
+  color: #e8ffe9;
+  line-height: 1.5;
+}
+
+.buttercup-info ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.buttercup-info li::before {
+  content: '✦ ';
+  color: #7aff7a;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

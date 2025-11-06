@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #151527;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #fbb6ce; /* color rosa */
+  font-family: 'Press Start 2P', cursive; /* fuente pixel */
+  font-size: 1.125rem; /* text-lg */
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* tracking-widest */
+}
+
+.navbar a {
+  color: #fbb6ce;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffe4f0; /* hover rosa claro */
+}

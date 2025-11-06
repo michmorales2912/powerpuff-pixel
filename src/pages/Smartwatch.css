@@ -1,0 +1,81 @@
+.smartwatch-section {
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.smartwatch-title {
+  font-family: 'Press Start 2P', cursive; /* tu fuente pixel */
+  font-size: 2.5rem;
+  color: #f9a8d4; /* text-pink-400 */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.smartwatch-text {
+  color: #fbcfe8; /* text-pink-200 */
+  max-width: 36rem; /* similar a max-w-xl */
+  margin: 0 auto 1.5rem;
+}
+
+.smartwatch-img {
+  width: 16rem; /* w-64 */
+  height: 16rem; /* h-64 */
+  display: block;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.3s;
+}
+
+.smartwatch-img:hover {
+  transform: scale(1.05);
+}
+
+.smartwatch-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-pink {
+  background-color: #ec4899; /* bg-pink-500 */
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: #db2777; /* hover:bg-pink-600 */
+}
+
+.btn-purple {
+  background-color: #8b5cf6; /* bg-purple-500 */
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #7c3aed; /* hover:bg-purple-600 */
+}
+
+/* Animación tipo Tailwind pulse */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
