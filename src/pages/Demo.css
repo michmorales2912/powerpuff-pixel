@@ -1,0 +1,67 @@
+.demo-section {
+  min-height: 100vh;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  text-align: center;
+  color: #fce7f3;
+}
+
+.demo-titulo {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: #ff6ec7;
+  margin-bottom: 2rem;
+  animation: pulse 2s infinite;
+}
+
+.demo-video-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.demo-video {
+  width: 560px;
+  height: 315px;
+  border: 2px solid #ff6ec7;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff6ec7;
+}
+
+.demo-descripcion {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #fde2e4;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.demo-button-pixel {
+  background: #00ffcc;
+  color: #000;
+  padding: 10px 25px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  font-family: "Press Start 2P", cursive; /* igual que tus otros botones */
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0px #000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.demo-button-pixel:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000;
+}
+
+.demo-button-pixel:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000;
+}

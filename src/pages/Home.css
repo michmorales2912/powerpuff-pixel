@@ -1,0 +1,85 @@
+/* Home.css */
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.home-logo {
+  width: 10rem; /* 40 en Tailwind = 10rem */
+  height: 10rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+.home-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3.75rem; /* 6xl */
+  font-weight: bold;
+  color: #f9a8ff; /* text-pink-400 */
+  text-shadow: 0 0 8px #ff8bff;
+  animation: pulse 2s infinite;
+}
+
+
+.home-slogan {
+  margin-top: 1rem;
+  font-size: 1.25rem; /* xl */
+  color: #fbcfe8; /* text-pink-200 */
+  max-width: 32rem; /* max-w-2xl */
+  animation: pulse 2s infinite;
+}
+
+.home-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem; /* lg */
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.home-button-pink {
+  background-color: #ec4899;
+}
+
+.home-button-pink:hover {
+  background-color: #db2777;
+  transform: scale(1.05);
+}
+
+.home-button-purple {
+  background-color: #8b5cf6;
+}
+
+.home-button-purple:hover {
+  background-color: #7c3aed;
+  transform: scale(1.05);
+}
+
+/* Animaciones básicas de Tailwind */
+@keyframes bounce {
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8,0,1,1); }
+  50% { transform: translateY(0); animation-timing-function: cubic-bezier(0,0,0.2,1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

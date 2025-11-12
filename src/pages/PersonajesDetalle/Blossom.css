@@ -1,0 +1,82 @@
+.blossom-section {
+  min-height: 100vh;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #fce7f3;
+}
+
+.blossom-titulo {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff6ec7;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: pulse 2s infinite;
+}
+
+.blossom-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.blossom-imagen-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(31, 5, 40, 0.8);
+  border: 2px solid #ff6ec7;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 20px #ff6ec7;
+}
+
+.blossom-imagen {
+  width: 220px;
+  height: 220px;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 0 15px #ff6ec7);
+}
+
+.blossom-info {
+  background-color: rgba(31, 5, 40, 0.8);
+  border: 2px solid #ff6ec7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 600px;
+  box-shadow: 0 0 20px #ff6ec7;
+}
+
+.blossom-info h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #f472b6;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.blossom-info p,
+.blossom-info ul {
+  font-size: 0.9rem;
+  color: #fde2e4;
+  line-height: 1.5;
+}
+
+.blossom-info ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.blossom-info li::before {
+  content: '✦ ';
+  color: #ff6ec7;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

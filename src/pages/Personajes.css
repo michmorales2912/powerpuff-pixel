@@ -1,0 +1,87 @@
+.personajes-section {
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.personajes-titulo {
+  font-family: 'Press Start 2P', cursive; /* tu fuente pixel */
+  font-size: 2.5rem;
+  color: #f472b6; /* pink-400 */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+.personajes-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card-personaje {
+  background-color: #1f0528; /* fondo oscuro para resaltar glow */
+  border-radius: 0.5rem;
+  padding: 1.5rem; /* un poco más de espacio interno */
+  width: 16rem; /* tarjeta más grande */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.card-personaje:hover {
+  transform: scale(1.05);
+}
+
+.card-imagen {
+  width: 10rem; /* imagen más grande */
+  height: 10rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-nombre {
+  font-family: 'Press Start 2P', cursive; /* fuente pixel */
+  font-size: 1.5rem; /* ligeramente más grande */
+  font-weight: bold;
+  color: #fbcfe8; /* pink-200 */
+  text-align: center;
+}
+
+.card-descripcion {
+  font-size: 0.95rem; /* ligeramente más grande */
+  color: #fee2e2; /* pink-100 */
+  text-align: center;
+}
+
+.card-boton {
+  margin-top: 0.75rem;
+  background-color: #ec4899; /* pink-500 */
+  color: white;
+  padding: 0.35rem 1.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.card-boton:hover {
+  background-color: #db2777; /* pink-600 */
+  transform: scale(1.05);
+}
+
+/* Animación pulse */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
