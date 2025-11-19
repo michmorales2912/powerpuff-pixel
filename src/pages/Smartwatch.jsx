@@ -1,6 +1,8 @@
-import './Smartwatch.css';
+import "./Smartwatch.css";
 
 export default function Smartwatch() {
+  const smartwatchImg = `${import.meta.env.BASE_URL}smartwatch.png`;
+
   return (
     <section className="smartwatch-section">
       <h2 className="smartwatch-title">Smartwatch App</h2>
@@ -8,9 +10,8 @@ export default function Smartwatch() {
         Con la app del teléfono y smartwatch puedes ver estadísticas, vidas y misiones de tus personajes en tiempo real.
       </p>
 
-      {/* Imagen del smartwatch */}
       <img
-        src="/smartwatch.png"
+        src={smartwatchImg}
         alt="Smartwatch"
         className="smartwatch-img"
       />

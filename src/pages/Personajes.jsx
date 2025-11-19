@@ -1,5 +1,5 @@
-import './Personajes.css';
-import { Link } from 'react-router-dom';
+import "./Personajes.css";
+import { Link } from "react-router-dom";
 
 function CardPersonaje({ to, nombre, descripcion, imagen, color }) {
   return (
@@ -17,31 +17,34 @@ function CardPersonaje({ to, nombre, descripcion, imagen, color }) {
 }
 
 export default function Personajes() {
+  const base = import.meta.env.BASE_URL;
+  const blossomIcon = `${base}personajes/blossom_icono.png`;
+  const bubblesIcon = `${base}personajes/bubbles_icono.png`;
+  const buttercupIcon = `${base}personajes/buttercup_icono.png`;
+
   return (
     <section className="personajes-section">
       <h2 className="personajes-titulo">Personajes</h2>
       <div className="personajes-grid">
         <CardPersonaje
-          to="../PersonajesDetalle/Blossom"
+          to="/personajesdetalle/blossom"
           nombre="Blossom"
           descripcion="Líder estratégica, siempre piensa en la misión perfecta."
-          imagen="/personajes/blossom_icono.png"
+          imagen={blossomIcon}
           color="#FF6EC7"
         />
-
         <CardPersonaje
-          to="../PersonajesDetalle/Bubbles"
+          to="/personajesdetalle/bubbles"
           nombre="Bubbles"
           descripcion="Dulce y divertida, su alegría es contagiosa."
-          imagen="/personajes/bubbles_icono.png"
+          imagen={bubblesIcon}
           color="#4FC3F7"
         />
-
         <CardPersonaje
-          to="../PersonajesDetalle/Buttercup"
+          to="/personajesdetalle/buttercup"
           nombre="Buttercup"
           descripcion="Fuerza bruta y valiente, nunca se rinde."
-          imagen="/personajes/buttercup_icono.png"
+          imagen={buttercupIcon}
           color="#7CFC00"
         />
       </div>

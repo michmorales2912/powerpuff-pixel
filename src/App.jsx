@@ -30,6 +30,8 @@ export default function App() {
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/contacto" element={<Contacto />} />
+
+          <Route path="*" element={<Home />} />
         </Routes>
       </div>
       <Footer />
