@@ -79,3 +79,84 @@
     opacity: 0.5;
   }
 }
+
+.smartwatch-features {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 40rem;
+  margin: 0 auto 2rem;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.features-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: #f9a8d4;
+  margin-bottom: 1rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  color: #fbcfe8;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.features-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* GRID DE FEATURES */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+/* TARJETAS GAMIFICADAS */
+.feature-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 1.4rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #ffe4f7;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 137, 255, 0.6);
+}
+
+/* ICONO GRANDE */
+.feature-icon {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 0.6rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* TÍTULO DE LA TARJETA */
+.feature-title {
+  font-family: 'Press Start 2P', cursive;
+  color: #ffb3e6;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Animación flotante */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}

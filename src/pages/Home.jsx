@@ -16,11 +16,8 @@ export default function Home() {
       </p>
 
       <div className="home-buttons">
-        <Link to="/personajes" className="home-button home-button-pink">
-          Ver Personajes
-        </Link>
-        <Link to="/historia" className="home-button home-button-purple">
-          Historia
+        <Link to="/registro" className="home-button home-button-pink">
+          Registrarse para obtener el juego
         </Link>
       </div>
     </section>

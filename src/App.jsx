@@ -9,6 +9,7 @@ import Smartwatch from "./pages/Smartwatch";
 import Galeria from "./pages/Galeria";
 import Contacto from "./pages/Contacto";
 import Demo from "./pages/Demo";
+import Registro from "./pages/Registro";
 
 import Blossom from "./pages/PersonajesDetalle/Blossom";
 import Buttercup from "./pages/PersonajesDetalle/Buttercup";
@@ -30,6 +31,8 @@ export default function App() {
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/registro" element={<Registro />} />
+
 
           <Route path="*" element={<Home />} />
         </Routes>

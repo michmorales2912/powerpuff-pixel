@@ -1,0 +1,86 @@
+/* Registro.css */
+
+.registro-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/fondos/background2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+.registro-card {
+  background: rgba(15, 15, 26, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #ff8bff;
+  max-width: 25rem;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.registro-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: #f9a8ff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #ff8bff;
+}
+
+.registro-text {
+  color: #fbcfe8;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.registro-input {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid #ff8bff;
+  background: #1a1a2e;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.registro-input:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 10px #ec4899;
+}
+
+.registro-button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #ec4899;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.registro-button:hover {
+  background-color: #db2777;
+  transform: scale(1.05);
+}
+
+.registro-mensaje {
+  margin-top: 1rem;
+  color: #f9a8ff;
+  font-size: 0.9rem;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
