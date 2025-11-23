@@ -3,7 +3,7 @@ import "./Demo.css";
 export default function Demo() {
   return (
     <section className="demo-section">
-      <h2 className="demo-titulo">🎮 Trailer Powerpuff Pixel</h2>
+      <h2 className="demo-titulo">🎮 Trailer Videojuego Powerpuff Pixel</h2>
 
       <div className="demo-video-contenedor">
         <iframe
