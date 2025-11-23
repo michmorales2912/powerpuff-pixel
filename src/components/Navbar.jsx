@@ -10,7 +10,7 @@ export default function Navbar() {
       <Link to="/smartwatch">Smartwatch</Link>
       <Link to="/galeria">Galería</Link>
       <Link to="/contacto">Contacto</Link>
-      <Link to="/demo">Demo</Link>
+      <Link to="/demo">Trailer</Link>
     </nav>
   );
 }
